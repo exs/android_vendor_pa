@@ -34,7 +34,7 @@ $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 -include vendor/pa/packages/cm.mk
 
 # Override AOSP build properties
-PRODUCT_NAME := full_d2tmo
+PRODUCT_NAME := pa_d2tmo
 PRODUCT_DEVICE := d2tmo
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
