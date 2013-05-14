@@ -19,19 +19,31 @@ ifeq (pa_d2tmo,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_i9300
+OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
+# inherit from common d2
+-include device/samsung/d2-common/BoardConfigCommon.mk
+# inherit from the proprietary version
+-include vendor/samsung/d2tmo/BoardConfigVendor.mk
+
 
 # Inherit AOSP device configuration
+$(call inherit-product, device/samsung/d2tmo/device.mk)
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/gsm.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_d2tmo
