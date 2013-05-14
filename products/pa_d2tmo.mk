@@ -33,15 +33,16 @@ include vendor/pa/config/pa_common.mk
 
 
 # Inherit AOSP device configuration
+$(call inherit-product, device/samsung/d2tmo/cm.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from d2tmo device
 $(call inherit-product, device/samsung/d2tmo/device.mk)
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
-
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
