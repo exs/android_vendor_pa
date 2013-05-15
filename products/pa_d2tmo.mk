@@ -32,8 +32,6 @@ include vendor/pa/config/pa_common.mk
 -include vendor/samsung/d2tmo/BoardConfigVendor.mk
 
 
-# Inherit AOSP device configuration
-$(call inherit-product, device/samsung/d2tmo/cm.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2tmo device
