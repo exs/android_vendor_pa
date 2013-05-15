@@ -6,8 +6,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
-
+    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
+    vendor/pa/prebuilt/common/apk/com.paranoid.halo.apk:system/app/com.paranoid.halo.apk
+	
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit \
