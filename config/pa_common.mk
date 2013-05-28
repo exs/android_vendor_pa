@@ -6,8 +6,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk \
-    vendor/pa/prebuilt/common/apk/com.paranoid.halo.apk:system/app/com.paranoid.halo.apk
+    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
 	
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -56,7 +55,9 @@ endif
 
 # ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
-    ParanoidWallpapers
+    ParanoidWallpapers \
+    HALO \
+    DashClock
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
@@ -91,8 +92,8 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 5
-PA_VERSION_MAINTENANCE = 0
+PA_VERSION_MINOR = 1
+PA_VERSION_MAINTENANCE = 5
 PA_PREF_REVISION = 1
 
 TARGET_CUSTOM_RELEASETOOL :=source vendor/pa/tools/squisher
@@ -113,7 +114,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # goo.im properties
 ifneq ($(DEVELOPER_VERSION),true)
     PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=Ayysir \
+      ro.goo.developerid=Dre \
       ro.goo.rom=paranoidandroid \
       ro.goo.version=$(shell date +%s)
+      ro.goo.board=d2tmo
 endif
