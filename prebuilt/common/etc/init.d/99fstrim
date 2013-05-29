@@ -1,0 +1,10 @@
+#!/system/bin/sh
+
+
+LOG_FILE=/data/local/fstrim.log
+  if [ -e $LOG_FILE ]; then
+    	rm $LOG_FILE;
+    fi;
+fstrim -v /cache | tee -a $LOG_FILE;
+fstrim -v /data | tee -a $LOG_FILE;
+fstrim -v /system | tee -a $LOG_FILE;

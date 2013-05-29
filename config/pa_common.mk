@@ -15,7 +15,8 @@ PRODUCT_COPY_FILES += \
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/pa/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
+    vendor/pa/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim
 
 # Libs
 PRODUCT_COPY_FILES += \
@@ -26,6 +27,10 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+
+# Extras
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/bin/fstrim:system/bin/fstrim
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
