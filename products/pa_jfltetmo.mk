@@ -19,7 +19,7 @@ ifeq (pa_jfltetmo,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := pa_xxhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
@@ -27,7 +27,7 @@ PREFS_FROM_SOURCE ?= false
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 # inherit from common d2
--include device/samsung/d2-common/BoardConfigCommon.mk
+-include device/samsung/jf-common/BoardConfigCommon.mk
 # inherit from the proprietary version
 -include vendor/samsung/jfltetmo/BoardConfigVendor.mk
 
