@@ -19,7 +19,7 @@ ifeq (pa_jfltetmo,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xxhdpi
+OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
@@ -35,6 +35,7 @@ include vendor/pa/config/pa_common.mk
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from jfltetmo device
+$(call inherit-product, device/samsung/jfltetmo/cm.mk)
 $(call inherit-product, device/samsung/jfltetmo/device.mk)
 $(call inherit-product, device/samsung/jfltetmo/full_jfltetmo.mk)
 # CM Package Extras
