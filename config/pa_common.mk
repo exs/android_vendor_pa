@@ -62,7 +62,8 @@ endif
 PRODUCT_PACKAGES += \
     ParanoidWallpapers \
     HALO \
-    DashClock
+    DashClock \
+    ParanoidUpdater
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
