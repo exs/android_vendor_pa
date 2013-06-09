@@ -15,4 +15,5 @@ add_lunch_combo pa_endeavoru-userdebug
 add_lunch_combo pa_d710-userdebug
 add_lunch_combo pa_d2tmo-userdebug
 add_lunch_combo pa_jfltetmo-userdebug
+add_lunch_combo pa_jflteatt-userdebug
 add_lunch_combo pa_d2spr-userdebug
