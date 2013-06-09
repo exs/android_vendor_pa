@@ -52,7 +52,6 @@ endif
 ifeq (pa_jfltetmo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltetmo.mk
 endif
-endif
 ifeq (pa_jflteatt,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jflteatt.mk
 endif
