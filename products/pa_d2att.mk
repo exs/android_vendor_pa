@@ -36,7 +36,7 @@ include vendor/pa/config/pa_common.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2tmo device
 $(call inherit-product, device/samsung/d2att/device.mk)
-$(call inherit-product, device/samsung/d2att/full_d2tmo.mk)
+$(call inherit-product, device/samsung/d2att/full_d2att.mk)
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
 # Inherit some common CM stuff.
