@@ -115,11 +115,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.version=$(VERSION) \
   ro.papref.revision=$(PA_PREF_REVISION)
 
-# goo.im properties
-ifneq ($(DEVELOPER_VERSION),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=Dre \
-      ro.goo.rom=paranoidandroid \
-      ro.goo.version=$(shell date +%s)
-      ro.goo.board=d2tmo
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.goo.developerid=paranoidandroid \
+  ro.goo.rom=$(PRODUCT_DEVICE) \
+  ro.goo.version=$(shell date +%s) \
+  ro.goo.board=$(PRODUCT_DEVICE)
