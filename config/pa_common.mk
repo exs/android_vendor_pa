@@ -3,10 +3,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.ringtone=Themos.ogg \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
-
-# Copy specific ROM files
-PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
 	
 # init.d support
 PRODUCT_COPY_FILES += \
