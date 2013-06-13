@@ -30,8 +30,8 @@
     {
         "remote":       "bitbucket",
     	"account":      "ayysir",
-    	"repository": "android_device_samsung_d2tmo",
-    	"target_path": "device/samsung/d2tmo",
+    	"repository": "android_device_samsung_d2usc",
+    	"target_path": "device/samsung/d2usc",
     	"revision":     "cm-10.1"
     },
     {
