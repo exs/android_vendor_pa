@@ -1,18 +1,21 @@
 [
     {
         "remote":       "paranoid",
+        "account":      "paranoidandroid",
         "repository":   "android_packages_apps_paranoidpreferences",
         "target_path":  "packages/apps/ParanoidPreferences",
         "revision":     "jellybean"
     },
     {
         "remote":       "github",
+        "account":      "ParanoidAndroid",
         "repository":   "HALO",
         "target_path":  "packages/apps/HALO",
         "revision":     "jellybean"
     },
     {
         "remote":       "github",
+        "account":      "ParanoidAndroid",
         "repository":   "android_packages_apps_ParanoidUpdater",
         "target_path":  "packages/apps/ParanoidUpdater",
         "revision":     "jellybean"
