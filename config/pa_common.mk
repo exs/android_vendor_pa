@@ -26,9 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # Extras
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/fstrim:system/bin/fstrim \
-    vendor/pa/prebuilt/common/apk/Gallery2.apk:system/app/Gallery2.apk \
-    vendor/pa/prebuilt/common/etc/media_profiles.xml:system/etc/media_profiles.xml
+    vendor/pa/prebuilt/common/bin/fstrim:system/bin/fstrim
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
