@@ -4,7 +4,7 @@
             This will put your device into 480 DPI/600p Phablet UI, none of your apps will be changed.
         ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
-        <setting type="Hybrid" target="com.android.systemui.dpi" value="%rom_default_dpi"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="400"/>
         <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
         <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="100"/>
         <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="0"/>
