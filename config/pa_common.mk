@@ -54,12 +54,15 @@ else
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
 
+# Copy specific ROM files
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
+
 # ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
     ParanoidWallpapers \
     HALO \
-    DashClock \
-    ParanoidUpdater
+    DashClock
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
