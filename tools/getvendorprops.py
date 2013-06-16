@@ -32,9 +32,13 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
+def createPath(".repo/local_manifest"):
+    if not os.path.isdir(".repo/local_manifest"):
+        os.mkdir(".repo/local_manifest")
+
 def is_in_manifest(projectname):
     try:
-        lm = ElementTree.parse(".repo/local_manifest.xml")
+        lm = ElementTree.parse(".repo/local_manifest/local_manifest.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
