@@ -47,7 +47,7 @@ def is_in_manifest(projectname):
 
 def add_to_manifest(repositories):
     try:
-        lm = ElementTree.parse(".repo/local_manifest.xml")
+        lm = ElementTree.parse(".repo/local_manifest/local_manifest.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
