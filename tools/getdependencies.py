@@ -34,7 +34,7 @@ def indent(elem, level=0):
 
 def is_in_manifest(projectname):
     try:
-        lm = ElementTree.parse(".repo/local_manifest.xml")
+        lm = ElementTree.parse(".repo/local_manifest/local_manifest.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
@@ -44,7 +44,7 @@ def is_in_manifest(projectname):
             return 1
 
     try:
-        mm = ElementTree.parse(".repo/manifest.xml")
+        mm = ElementTree.parse(".repo/local_manifest/manifest.xml")
         mm = mm.getroot()
     except:
         mm = ElementTree.Element("manifest")
@@ -57,7 +57,7 @@ def is_in_manifest(projectname):
 
 def add_to_manifest(repositories):
     try:
-        lm = ElementTree.parse(".repo/local_manifest.xml")
+        lm = ElementTree.parse(".repo/local_manifest/local_manifest.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")

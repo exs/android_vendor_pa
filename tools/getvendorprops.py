@@ -32,9 +32,7 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
-def mkdirs(".repo/local_manifest"):
-    if not os.path.exists(".repo/local_manifest"):
-        os.makedirs(".repo/local_manifest")
+os.mkdir(".repo/local_manifest")
 
 def is_in_manifest(projectname):
     try:
