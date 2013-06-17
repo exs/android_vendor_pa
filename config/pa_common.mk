@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ParanoidWallpapers \
     HALO \
-    DashClock
+    DashClock \
+    OTAPlatform
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
@@ -123,3 +124,10 @@ ifneq ($(DEVELOPER_VERSION),true)
       ro.goo.rom=paranoidandroid \
       ro.goo.version=$(shell date +%s)
 endif
+
+# OTAPlatform properties
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro_otaplatform.changelog_url=https://plus.google.com/app/basic/107979589566958860409/posts \
+  ro_otaplatform.gapps_url=http://goo.im/devs/paranoidandroid/roms/gapps \
+  ro_otaplatform.gapps_version=ro.addon.pa_version \
+  ro_otaplatform.backup_files=/system/etc/paranoid/properties.conf
