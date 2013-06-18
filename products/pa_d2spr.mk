@@ -19,7 +19,7 @@ ifeq (pa_d2spr,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := pa_d2xx
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
