@@ -64,8 +64,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ParanoidWallpapers \
     HALO \
-    DashClock \
-    OTAPlatform
+    DashClock
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
