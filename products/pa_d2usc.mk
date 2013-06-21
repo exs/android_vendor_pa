@@ -40,7 +40,7 @@ $(call inherit-product, device/samsung/d2usc/full_d2usc.mk)
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/pa/config/cdma.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
