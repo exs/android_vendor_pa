@@ -70,11 +70,6 @@ include vendor/pa/config/themes_common.mk
 #Embed superuser into settings 
 SUPERUSER_EMBEDDED := true
 
-# device common prebuilts
-ifneq ($(DEVICE_COMMON),)
-    -include vendor/pa/prebuilt/$(DEVICE_COMMON)/prebuilt.mk
-endif
-
 # device specific prebuilts
 -include vendor/pa/prebuilt/$(TARGET_PRODUCT)/prebuilt.mk
 
