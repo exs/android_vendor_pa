@@ -40,7 +40,7 @@ $(call inherit-product, device/samsung/jfltecan/full_jfltecan.mk)
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+-include vendor/pa/config/gsm.mk
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
