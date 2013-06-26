@@ -86,6 +86,27 @@ endif
 
 BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
+# APN distingushing fix
+ifneq ($(TARGET_PRODUCT),pa_d2vzw)
+PRODUCT_COPY_FILES += \
+        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+endif
+
+ifneq ($(TARGET_PRODUCT),pa_d2spr)
+PRODUCT_COPY_FILES += \
+        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+endif
+
+ifneq ($(TARGET_PRODUCT),pa_d2usc)
+PRODUCT_COPY_FILES += \
+        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+endif
+
+ifneq ($(TARGET_PRODUCT),pa_d2mtr)
+PRODUCT_COPY_FILES += \
+        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+endif
+
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
