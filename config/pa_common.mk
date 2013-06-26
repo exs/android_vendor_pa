@@ -90,46 +90,29 @@ BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 ifneq ($(TARGET_PRODUCT),pa_d2vzw)
 PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+else
+	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2spr)
 PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+else
+	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2usc)
 PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+else
+	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2mtr)
 PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2tmo)
-PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2att)
-PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_jfltetmo)
-PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_jflteatt)
-PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-endif
-
-ifneq ($(TARGET_PRODUCT),pa_jfltecan)
-PRODUCT_COPY_FILES += \
-       vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+else
+	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 
