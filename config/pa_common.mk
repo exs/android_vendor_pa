@@ -86,25 +86,25 @@ endif
 
 BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
-# APN distingushing fix
+# APN Distingushing Fix
 ifneq ($(TARGET_PRODUCT),pa_d2vzw)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2spr)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2usc)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2mtr)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/cdma/apns-conf-cdma.xml:system/etc/apns-conf.xml
+         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2tmo)
