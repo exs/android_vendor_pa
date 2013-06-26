@@ -109,27 +109,27 @@ endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2tmo)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/gsm/gsmapns-conf.xml:system/etc/apns-conf.xml
+        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2att)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/gsm/gsmapns-conf.xml:system/etc/apns-conf.xml
+        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_jfltetmo)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/gsm/gsmapns-conf.xml:system/etc/apns-conf.xml
+        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_jflteatt)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/gsm/gsmapns-conf.xml:system/etc/apns-conf.xml
+        vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_jfltecan)
 PRODUCT_COPY_FILES += \
-        device/samsung/d2-common/apns/gsm/gsmapns-conf.xml:system/etc/apns-conf.xml
+       vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 
