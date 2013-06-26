@@ -92,16 +92,25 @@ ifeq ($(TARGET_PRODUCT),pa_d2vzw)
 else
     APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
+PRODUCT_COPY_FILES += \
+    $(APN):system/etc/apns-conf.xml
+
 ifeq ($(TARGET_PRODUCT),pa_d2usc)
     APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
     APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
+PRODUCT_COPY_FILES += \
+    $(APN):system/etc/apns-conf.xml
+
 ifeq ($(TARGET_PRODUCT),pa_d2mtr)
     APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
     APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
+PRODUCT_COPY_FILES += \
+    $(APN):system/etc/apns-conf.xml
+
 ifeq ($(TARGET_PRODUCT),pa_d2spr)
     APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
