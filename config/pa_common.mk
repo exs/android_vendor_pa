@@ -88,30 +88,34 @@ BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
 # APN Distingushing Fix
 ifneq ($(TARGET_PRODUCT),pa_d2vzw)
-PRODUCT_COPY_FILES += \
+    PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 else
+    PRODUCT_COPY_FILES += \
 	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2spr)
-PRODUCT_COPY_FILES += \
+    PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 else
+    PRODUCT_COPY_FILES += \
 	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2usc)
-PRODUCT_COPY_FILES += \
+    PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 else
+    PRODUCT_COPY_FILES += \
 	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
 ifneq ($(TARGET_PRODUCT),pa_d2mtr)
-PRODUCT_COPY_FILES += \
+    PRODUCT_COPY_FILES += \
          vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
 else
+    PRODUCT_COPY_FILES += \
 	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 endif
 
