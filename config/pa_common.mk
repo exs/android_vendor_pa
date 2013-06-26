@@ -87,38 +87,28 @@ endif
 BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
 # APN Distingushing Fix
-ifneq ($(TARGET_PRODUCT),pa_d2vzw)
-    PRODUCT_COPY_FILES += \
-         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+ifeq ($(TARGET_PRODUCT),pa_d2vzw)
+    APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
-    PRODUCT_COPY_FILES += \
-	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2spr)
-    PRODUCT_COPY_FILES += \
-         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+ifeq ($(TARGET_PRODUCT),pa_d2usc)
+    APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
-    PRODUCT_COPY_FILES += \
-	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2usc)
-    PRODUCT_COPY_FILES += \
-         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+ifeq ($(TARGET_PRODUCT),pa_d2mtr)
+    APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
-    PRODUCT_COPY_FILES += \
-	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
-
-ifneq ($(TARGET_PRODUCT),pa_d2mtr)
-    PRODUCT_COPY_FILES += \
-         vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml
+ifeq ($(TARGET_PRODUCT),pa_d2spr)
+    APN := vendor/pa/prebuilt/common/etc/apns-conf-cdma.xml
 else
-    PRODUCT_COPY_FILES += \
-	 vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+    APN := vendor/pa/prebuilt/common/etc/apns-conf.xml
 endif
-
+PRODUCT_COPY_FILES += \
+    $(APN):system/etc/apns-conf.xml
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
