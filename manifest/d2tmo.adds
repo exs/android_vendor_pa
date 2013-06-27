@@ -2,13 +2,6 @@
     {
         "remote":       "github",
         "account":      "Ayysir",
-        "repository":   "android_frameworks_base",
-        "target_path":  "frameworks/base",
-        "revision":     "jellybean-legacy"
-    },
-    {
-        "remote":       "github",
-        "account":      "Ayysir",
         "repository":   "android_packages_apps_Settings",
         "target_path":  "packages/apps/Settings",
         "revision":     "jellybean-legacy"
