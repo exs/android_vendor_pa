@@ -1,9 +1,0 @@
-[
-    {
-        "remote":       "github",
-        "account":      "Ayysir",
-        "repository":   "android_packages_apps_Settings",
-        "target_path":  "packages/apps/Settings",
-        "revision":     "jellybean-legacy"
-    }
-]
