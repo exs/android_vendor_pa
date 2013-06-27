@@ -62,7 +62,7 @@ endif
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
+    vendor/pa/prebuilt/common/apk/com.matze5800.paupdater-1.apk:system/app/papdater.apk 
 
 # ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
