@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/fstrim:system/bin/fstrim 
 
 # Google Edition Camera
-include vendor/pa/config/GECamera.mk
+include vendor/pa/config/Camera.mk
 
 
 # CM extras 
