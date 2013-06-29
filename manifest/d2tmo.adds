@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "Ayysir",
+        "repository":   "https://github.com/PAC-man/android_packages_apps_Mms",
+        "target_path":  "packages/apps/Mms",
+        "revision":     "exp"
+    }
+]

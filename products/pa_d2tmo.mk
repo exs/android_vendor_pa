@@ -55,6 +55,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2tmo TARGET_DEVICE=d2tmo BUILD_FIN
 # Update local_manifest.xml
 GET_PROJECT_RMS := $(shell vendor/pa/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py $(PRODUCT_NAME))
-GET_CM_PROJECT_ADDS := $(shell vendor/pa/tools/addprojects.py cm.adds)
 
 endif
