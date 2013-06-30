@@ -44,21 +44,25 @@
   <!--<apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" password="*" mmsc="http://mms.sprintpcs.com" authtype="3"/>-->
 
   <!-- Modify Apn database for Sprint LTE support -->
-  <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - SPRINT test PAM" mcc="001" mnc="01" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="010" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - SPRINT test OTA" mcc="001" mnc="010" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
-  <apn carrier="LTE - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
+  <apn name="LTE - SPRINT test ISP" numeric="00101" mcc="001" mnc="01" apn="n.ispsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
+  <apn name="LTE - SPRINT test OTA" numeric="00101" mcc="001" mnc="01" apn="otasn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="fota" />
+  <apn name="LTE - SPRINT test PAM" numeric="00101" mcc="001" mnc="01" apn="pamsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="dun" />
+  <apn name="LTE - SPRINT test ISP" numeric="001010" mcc="001" mnc="010" apn="n.ispsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
+  <apn name="LTE - SPRINT test OTA" numeric="001010" mcc="001" mnc="010" apn="otasn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="fota" />
+  <apn name="LTE - SPRINT test PAM" numeric="001010" mcc="001" mnc="010" apn="pamsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="dun" />
   <!-- END modify Apn database for Sprint LTE support -->
 
   <!-- Modify Apn database for Sprint EHRPD support -->
-  <apn carrier="EHRPD - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - SPRINT test OTA" mcc="001" mnc="01" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - SPRINT test PAM" mcc="001" mnc="01" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - SPRINT test ISP" mcc="001" mnc="010" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - SPRINT test OTA" mcc="001" mnc="010" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="EHRPD - SPRINT test PAM" mcc="001" mnc="010" apn="pamsn" type="dun" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
+  <apn name="EHRPD - SPRINT test ISP" numeric="00101" mcc="001" mnc="01" apn="n.ispsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
+  <apn name="EHRPD - SPRINT test OTA" numeric="00101" mcc="001" mnc="01" apn="otasn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="fota" />
+  <apn name="EHRPD - SPRINT test PAM" numeric="00101" mcc="001" mnc="01" apn="pamsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="dun" />
+  <apn name="EHRPD - SPRINT test ISP" numeric="001010" mcc="001" mnc="010" apn="n.ispsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
+  <apn name="EHRPD - SPRINT test OTA" numeric="001010" mcc="001" mnc="010" apn="otasn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="fota" />
+  <apn name="EHRPD - SPRINT test PAM" numeric="001010" mcc="001" mnc="010" apn="pamsn" user="null" server="null" password="null" proxy="null" port="null" mmsproxy="null" mmsport="null" mmsprotocol="null" mmsc="null" type="dun" />
+  <apn name="APN0 LTE ota" numeric="310120" mcc="310" mnc="120" apn="otasn" user="" server="" password="" proxy="" port="" mmsproxy="" mmsport="" mmsprotocol="null" mmsc="" type="fota" />
+  <apn name="APN0 EHRPD ota" numeric="310120" mcc="310" mnc="120" apn="otasn" user="" server="" password="" proxy="" port="" mmsproxy="" mmsport="" mmsprotocol="null" mmsc="" type="fota" />
+  <apn name="APN2 LTE internet" numeric="310120" mcc="310" mnc="120" apn="n.ispsn" user="" server="" password="" proxy="" port="" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
+  <apn name="APN2 EHRPD internet" numeric="310120" mcc="310" mnc="120" apn="n.ispsn" user="" server="" password="" proxy="" port="" mmsproxy="68.28.31.7" mmsport="80" mmsprotocol="null" mmsc="http://mms.sprintpcs.com" type="default,mms" />
   <!-- END modify Apn database for Sprint EHRPD support -->
 
 <!-- Verizon Wireless -->
