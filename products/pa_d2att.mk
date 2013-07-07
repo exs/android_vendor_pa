@@ -40,7 +40,7 @@ $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 # CM Package Extras
 -include vendor/pa/packages/cm.mk
 # Inherit some common CM stuff.
--include vendor/pa/config/gsm.mk
+-include vendor/pa/config/gsm_old.mk
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
