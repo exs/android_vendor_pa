@@ -89,5 +89,26 @@
         "repository":   "android_packages_apps_Torch",
         "target_path":  "packages/apps/Torch",
         "revision":     "cm-10.1"
-    }
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_fuse",
+        "target_path":  "external/fuse",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_ntfs-3g",
+        "target_path":  "external/ntfs-3g",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "CyanogenMod",
+        "repository":   "android_external_exfat",
+        "target_path":  "external/exfat",
+        "revision":     "cm-10.1"
+    },
 ]
