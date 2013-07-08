@@ -21,4 +21,9 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh \
-    rsync
+    rsync \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
