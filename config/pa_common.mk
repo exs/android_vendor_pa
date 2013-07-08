@@ -63,9 +63,10 @@ else
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
 
-# Copy specific ROM files
+# Extras
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/com.matze5800.paupdater-1.apk:system/app/paupdater.apk 
+    vendor/pa/prebuilt/common/apk/com.matze5800.paupdater-1.apk:system/app/paupdater.apk \
+    vendor/pa/prebuilt/common/apk/babel-2-signed.apk:system/app/Babel.apk
 
 # ParanoidAndroid common packages
 PRODUCT_PACKAGES += \
