@@ -19,5 +19,5 @@
         "repository":   "android_external_exfat",
         "target_path":  "external/exfat",
         "revision":     "cm-10.1"
-    },
+    }
 ]
