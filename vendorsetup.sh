@@ -25,3 +25,4 @@ add_lunch_combo pa_jflteatt-userdebug
 add_lunch_combo pa_jfltecan-userdebug
 add_lunch_combo pa_m7tmo-userdebug
 add_lunch_combo pa_m7ul-userdebug
+add_lunch_combo pa_i9100g-userdebug
